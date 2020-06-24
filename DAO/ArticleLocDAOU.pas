@@ -1,6 +1,7 @@
 unit ArticleLocDAOU;
 
 interface
+//changement verifie git
 
 uses
   ArticleLocDTOU, APIUtilsU, FireDAC.UI.Intf, FireDAC.FMXUI.Wait,
