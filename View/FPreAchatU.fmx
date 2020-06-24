@@ -1,0 +1,333 @@
+object FPreAchat: TFPreAchat
+  Align = Client
+  Size.Width = 358.000000000000000000
+  Size.Height = 543.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox1: TVertScrollBox
+    Align = Client
+    Size.Width = 358.000000000000000000
+    Size.Height = 543.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 358.000000000000000000
+    Viewport.Height = 543.000000000000000000
+    object Rectangle5: TRectangle
+      Align = Client
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFF2B45C
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = claWhite
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Size.Width = 358.000000000000000000
+      Size.Height = 543.000000000000000000
+      Size.PlatformDefault = False
+      object Layout1: TLayout
+        Align = Top
+        Size.Width = 358.000000000000000000
+        Size.Height = 193.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Rectangle1: TRectangle
+          Align = Top
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 2.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 354.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          object Label1: TLabel
+            Align = Center
+            Size.Width = 165.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'listboxheaderlabel'
+            TextSettings.FontColor = claBlue
+            Text = 'Gestion Pr'#233'Achat'
+            TabOrder = 0
+          end
+        end
+        object SGEntete: TStringGrid
+          Align = Client
+          CanFocus = True
+          ClipChildren = True
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 354.000000000000000000
+          Size.Height = 152.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+          TabOrder = 0
+          Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, HeaderClick, AutoDisplacement]
+          OnCellClick = SGEnteteCellClick
+          Viewport.Width = 334.000000000000000000
+          Viewport.Height = 111.000000000000000000
+          object StringColumn1: TStringColumn
+            Header = 'Code Pr'#233'Achat'
+            Size.Width = 65.000000000000000000
+          end
+          object StringColumn2: TStringColumn
+            Header = 'd'#233'signation '
+            Size.Width = 183.000000000000000000
+          end
+          object StringColumn7: TStringColumn
+            Header = 'Date'
+            Size.Width = 87.000000000000000000
+          end
+        end
+      end
+      object Layout2: TLayout
+        Align = Client
+        Size.Width = 358.000000000000000000
+        Size.Height = 222.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object SGDetail: TStringGrid
+          Align = Client
+          CanFocus = True
+          ClipChildren = True
+          Size.Width = 358.000000000000000000
+          Size.Height = 222.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+          TabOrder = 0
+          Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, HeaderClick, AutoDisplacement]
+          OnCellClick = SGDetailCellClick
+          Viewport.Width = 338.000000000000000000
+          Viewport.Height = 197.000000000000000000
+          object StringColumn3: TStringColumn
+            Header = 'idRPr'#233'Achat'
+            Visible = False
+            Size.Width = 1.000000000000000000
+          end
+          object StringColumn4: TStringColumn
+            Header = 'CodeBarre'
+            Size.Width = 23.000000000000000000
+          end
+          object DesColumn: TStringColumn
+            Header = 'D'#233'signation'
+            Size.Width = 159.000000000000000000
+          end
+          object StringColumn5: TStringColumn
+            Header = 'Qt'#233
+            Size.Width = 39.000000000000000000
+          end
+          object StringColumn6: TStringColumn
+            Header = 'prix'
+            Size.Width = 47.000000000000000000
+          end
+          object PrixCartonColumn: TStringColumn
+            Header = 'Prix Carton'
+            Size.Width = 63.000000000000000000
+          end
+        end
+      end
+      object Layout3: TLayout
+        Align = Top
+        Position.Y = 193.000000000000000000
+        Size.Width = 358.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Rectangle4: TRectangle
+          Align = Client
+          Size.Width = 358.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          object BAjout: TButton
+            Align = Left
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.X = 2.000000000000000000
+            Position.Y = 2.000000000000000000
+            Size.Width = 113.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Ajouter'
+            OnClick = BAjoutClick
+          end
+          object BModif: TButton
+            Align = Left
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.X = 119.000000000000000000
+            Position.Y = 2.000000000000000000
+            Size.Width = 121.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Modifier'
+            OnClick = BModifClick
+          end
+          object BSupp: TButton
+            Align = Left
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.X = 244.000000000000000000
+            Position.Y = 2.000000000000000000
+            Size.Width = 117.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Supprimer'
+            OnClick = BSuppClick
+          end
+        end
+      end
+      object Layout4: TLayout
+        Align = Bottom
+        Position.Y = 479.000000000000000000
+        Size.Width = 358.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Rectangle2: TRectangle
+          Align = Top
+          Size.Width = 358.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          object ETotal: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Right
+            TabOrder = 0
+            TextSettings.Font.StyleExt = {00070000000200000004000000}
+            TextSettings.FontColor = claDarkorange
+            TextSettings.HorzAlign = Trailing
+            Position.X = 191.000000000000000000
+            Enabled = False
+            Size.Width = 167.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Size]
+            Caret.Color = claYellow
+          end
+          object Label2: TLabel
+            Align = Left
+            StyledSettings = [Family, FontColor]
+            Size.Width = 201.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 10.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Total Bon Pr'#233'Achat:'
+            TabOrder = 1
+          end
+        end
+        object Rectangle3: TRectangle
+          Align = Bottom
+          Position.Y = 32.000000000000000000
+          Size.Width = 358.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          object Bretour: TButton
+            Align = Client
+            Size.Width = 173.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'priortoolbutton'
+            TabOrder = 0
+            Text = 'Button3'
+            OnClick = BretourClick
+          end
+          object Bferme: TButton
+            Align = Left
+            Size.Width = 185.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Fermer'
+            OnClick = BfermeClick
+          end
+        end
+      end
+      object Layout5: TLayout
+        Align = Bottom
+        Position.Y = 447.000000000000000000
+        Size.Width = 358.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object BAjoutDtail: TButton
+          Align = Left
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 2.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Ajouter'
+          OnClick = BAjoutDtailClick
+        end
+        object BSuppDetail: TButton
+          Align = Left
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 203.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 88.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Supprimer'
+          OnClick = BSuppDetailClick
+        end
+        object BModifDetail: TButton
+          Align = Left
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 103.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 96.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Modifier'
+          OnClick = BModifDetailClick
+        end
+        object BsuppAll: TButton
+          Align = Left
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 295.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Sup tout'
+          OnClick = BsuppAllClick
+        end
+      end
+    end
+  end
+end

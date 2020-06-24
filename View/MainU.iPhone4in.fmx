@@ -1,0 +1,75 @@
+inherited Main_iPhone4in: TMain_iPhone4in
+  ClientHeight = 548
+  ClientWidth = 320
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 320.000000000000000000
+    Size.Height = 548.000000000000000000
+    Sizes = (
+      320s
+      548s
+      320s
+      548s
+      320s
+      548s)
+    inherited TMain: TTabItem
+      Size.Width = 11.000000000000000000
+      Size.Height = 11.000000000000000000
+      ExplicitSize.cx = 53.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited Rectangle2: TRectangle
+        Size.Width = 320.000000000000000000
+        inherited EIP: TEdit
+          Size.Width = 320.000000000000000000
+          Size.Height = 30.000000000000000000
+        end
+      end
+      inherited Rectangle3: TRectangle
+        Size.Width = 320.000000000000000000
+        inherited BCodeBarreWeb: TButton
+          Size.Width = 320.000000000000000000
+        end
+        inherited BClose: TButton
+          Size.Width = 320.000000000000000000
+        end
+        inherited BRecette: TButton
+          Size.Width = 320.000000000000000000
+        end
+        inherited BInvent: TButton
+          Size.Width = 320.000000000000000000
+        end
+        inherited BCodeBarreLoc: TButton
+          Size.Width = 320.000000000000000000
+        end
+        inherited BpreAchat: TButton
+          Size.Width = 320.000000000000000000
+        end
+      end
+      inherited Label1: TLabel
+        Size.Width = 320.000000000000000000
+      end
+    end
+    inherited TAchat: TTabItem
+      Size.Width = 11.000000000000000000
+      Size.Height = 11.000000000000000000
+      ExplicitSize.cx = 51.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited LayoutAchat: TFramedVertScrollBox
+        Size.Width = 320.000000000000000000
+        Size.Height = 548.000000000000000000
+        Viewport.Width = 320.000000000000000000
+        Viewport.Height = 548.000000000000000000
+      end
+    end
+    inherited TMAJAchat: TTabItem
+      Size.Width = 11.000000000000000000
+      Size.Height = 11.000000000000000000
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited LayoutMAJAchat: TLayout
+        Size.Width = 320.000000000000000000
+        Size.Height = 548.000000000000000000
+      end
+    end
+  end
+end

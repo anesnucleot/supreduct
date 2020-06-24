@@ -1,0 +1,326 @@
+object MBarCodeWeb: TMBarCodeWeb
+  Align = Client
+  Size.Width = 317.000000000000000000
+  Size.Height = 552.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox1: TVertScrollBox
+    Align = Client
+    Size.Width = 317.000000000000000000
+    Size.Height = 552.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Viewport.Width = 317.000000000000000000
+    Viewport.Height = 552.000000000000000000
+    object RecButtons: TRectangle
+      Align = Top
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = claCornflowerblue
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = claWhite
+          Offset = 1.000000000000000000
+        end>
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Position.Y = 209.000000000000000000
+      Size.Width = 317.000000000000000000
+      Size.Height = 232.000000000000000000
+      Size.PlatformDefault = False
+      object BFermer: TButton
+        Align = Top
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 4.000000000000000000
+        Position.Y = 165.000000000000000000
+        Size.Width = 309.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Fermer'
+        OnClick = BFermerClick
+      end
+      object BAfficherArticle: TButton
+        Align = Top
+        Position.X = 2.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 313.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Afficher Article'
+        OnClick = BAfficherArticleClick
+      end
+      object BAjouter: TButton
+        Align = Top
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 4.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 309.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Ajouter Code barre'
+        OnClick = BAjouterClick
+      end
+      object BSupprimer: TButton
+        Align = Top
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 4.000000000000000000
+        Position.Y = 108.000000000000000000
+        Size.Width = 309.000000000000000000
+        Size.Height = 53.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Supprimer Code barre'
+        OnClick = BSupprimerClick
+      end
+    end
+    object RecEdits: TRectangle
+      Align = Top
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFF18686
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = claWhite
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Size.Width = 317.000000000000000000
+      Size.Height = 209.000000000000000000
+      Size.PlatformDefault = False
+      object LayEdits: TLayout
+        Align = Top
+        Position.X = 2.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 313.000000000000000000
+        Size.Height = 207.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object LayArticle: TLayout
+          Align = Top
+          Position.Y = 103.000000000000000000
+          Size.Width = 313.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object EidArticle: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Left
+            TabOrder = 1
+            ReadOnly = True
+            TextSettings.Font.Size = 11.000000000000000000
+            Position.X = 2.000000000000000000
+            Position.Y = 2.000000000000000000
+            Padding.Left = 4.000000000000000000
+            Padding.Top = 4.000000000000000000
+            Padding.Right = 4.000000000000000000
+            Padding.Bottom = 4.000000000000000000
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Size.Width = 49.000000000000000000
+            Size.Height = 46.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'idArt'
+            StyledSettings = [Family, Style, FontColor]
+          end
+          object EDesArticle: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            ReadOnly = True
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Size.Width = 186.000000000000000000
+            Size.Height = 46.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'desArticle'
+            StyledSettings = [Family, Style, FontColor]
+          end
+          object ok: TButton
+            Align = Right
+            Padding.Left = 4.000000000000000000
+            Padding.Top = 4.000000000000000000
+            Padding.Right = 4.000000000000000000
+            Padding.Bottom = 4.000000000000000000
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.X = 245.000000000000000000
+            Position.Y = 2.000000000000000000
+            Size.Width = 66.000000000000000000
+            Size.Height = 46.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'ok'
+            OnClick = okClick
+          end
+        end
+        object LayIdBarCode: TLayout
+          Align = Top
+          Position.Y = 53.000000000000000000
+          Size.Width = 313.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object EIdBarCode: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            Padding.Left = 2.000000000000000000
+            Padding.Top = 2.000000000000000000
+            Padding.Right = 2.000000000000000000
+            Padding.Bottom = 2.000000000000000000
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Size.Width = 227.000000000000000000
+            Size.Height = 46.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Code '#224' barres'
+          end
+          object labIdBarCode: TLabel
+            Align = Left
+            StyledSettings = [Style, FontColor]
+            Padding.Left = 2.000000000000000000
+            Padding.Top = 2.000000000000000000
+            Padding.Right = 2.000000000000000000
+            Padding.Bottom = 2.000000000000000000
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.X = 2.000000000000000000
+            Position.Y = 2.000000000000000000
+            Size.Width = 78.000000000000000000
+            Size.Height = 46.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = '(Default)'
+            TextSettings.Font.Size = 11.000000000000000000
+            Text = 'Code '#224' barres'
+            TabOrder = 1
+          end
+        end
+        object LaySymbole: TLayout
+          Align = Top
+          Position.Y = 153.000000000000000000
+          Size.Width = 313.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object ESymbole: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 3
+            Padding.Left = 2.000000000000000000
+            Padding.Top = 2.000000000000000000
+            Padding.Right = 2.000000000000000000
+            Padding.Bottom = 2.000000000000000000
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Size.Width = 256.000000000000000000
+            Size.Height = 46.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'symbole'
+            StyledSettings = [Family, Style, FontColor]
+          end
+          object Label1: TLabel
+            Align = Left
+            StyledSettings = [Family, Style, FontColor]
+            Padding.Left = 2.000000000000000000
+            Padding.Top = 2.000000000000000000
+            Padding.Right = 2.000000000000000000
+            Padding.Bottom = 2.000000000000000000
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.X = 2.000000000000000000
+            Position.Y = 2.000000000000000000
+            Size.Width = 49.000000000000000000
+            Size.Height = 46.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 11.000000000000000000
+            Text = 'Symbole'
+            TabOrder = 1
+          end
+        end
+        object LayScan: TLayout
+          Align = Top
+          Size.Width = 313.000000000000000000
+          Size.Height = 53.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object BScanner: TButton
+            Align = Top
+            Padding.Left = 2.000000000000000000
+            Padding.Top = 2.000000000000000000
+            Padding.Right = 2.000000000000000000
+            Padding.Bottom = 2.000000000000000000
+            Size.Width = 313.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Scanner'
+            OnClick = BScannerClick
+          end
+        end
+      end
+    end
+  end
+  object RESTClient1: TRESTClient
+    BaseURL = 'http://localhost:8080/rsachat'
+    Params = <>
+    HandleRedirects = True
+    Left = 442
+    Top = 17
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 442
+    Top = 64
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 442
+    Top = 120
+  end
+  object BarcodeScanner1: TBarcodeScanner
+    BarcodeTypes = [btOneD, btQRCode, btProduct, btDataMatrix]
+    OnScanResult = BarcodeScanner1ScanResult
+    Left = 280
+    Top = 17
+  end
+end

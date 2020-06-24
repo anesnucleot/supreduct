@@ -1,0 +1,76 @@
+object FRecette: TFRecette
+  Align = Client
+  Size.Width = 296.000000000000000000
+  Size.Height = 403.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFFA2C883
+    Size.Width = 296.000000000000000000
+    Size.Height = 403.000000000000000000
+    Size.PlatformDefault = False
+    object Layout1: TLayout
+      Align = Top
+      Size.Width = 296.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Top
+        StyledSettings = [Family, FontColor]
+        Size.Width = 296.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'Recette'
+        TabOrder = 0
+      end
+    end
+    object Layout2: TLayout
+      Align = Bottom
+      Position.Y = 370.000000000000000000
+      Size.Width = 296.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Button1: TButton
+        Align = Client
+        Size.Width = 296.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Fermer'
+        OnClick = Button1Click
+      end
+    end
+    object Layout3: TLayout
+      Align = Client
+      Size.Width = 296.000000000000000000
+      Size.Height = 337.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object StringGrid1: TStringGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 296.000000000000000000
+        Size.Height = 337.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, HeaderClick, AutoDisplacement]
+        Viewport.Width = 276.000000000000000000
+        Viewport.Height = 312.000000000000000000
+        object StringColumn1: TStringColumn
+          Header = 'Date'
+          Size.Width = 89.000000000000000000
+        end
+        object StringColumn2: TStringColumn
+          Header = 'Montant'
+          Size.Width = 159.000000000000000000
+        end
+      end
+    end
+  end
+end

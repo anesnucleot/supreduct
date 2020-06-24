@@ -1,0 +1,68 @@
+inherited Main_NmXhdpiPh: TMain_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    Sizes = (
+      400s
+      615s
+      400s
+      615s
+      400s
+      615s)
+    inherited TMain: TTabItem
+      ExplicitSize.cx = 53.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited Rectangle2: TRectangle
+        Size.Width = 400.000000000000000000
+        inherited EIP: TEdit
+          Size.Width = 400.000000000000000000
+        end
+      end
+      inherited Rectangle3: TRectangle
+        Size.Width = 400.000000000000000000
+        inherited BCodeBarreWeb: TButton
+          Size.Width = 400.000000000000000000
+        end
+        inherited BClose: TButton
+          Size.Width = 400.000000000000000000
+        end
+        inherited BRecette: TButton
+          Size.Width = 400.000000000000000000
+        end
+        inherited BInvent: TButton
+          Size.Width = 400.000000000000000000
+        end
+        inherited BCodeBarreLoc: TButton
+          Size.Width = 400.000000000000000000
+        end
+        inherited BpreAchat: TButton
+          Size.Width = 400.000000000000000000
+        end
+      end
+      inherited Label1: TLabel
+        Size.Width = 400.000000000000000000
+      end
+    end
+    inherited TAchat: TTabItem
+      ExplicitSize.cx = 51.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited LayoutAchat: TFramedVertScrollBox
+        Size.Width = 400.000000000000000000
+        Size.Height = 615.000000000000000000
+        Viewport.Width = 400.000000000000000000
+        Viewport.Height = 615.000000000000000000
+      end
+    end
+    inherited TMAJAchat: TTabItem
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited LayoutMAJAchat: TLayout
+        Size.Width = 400.000000000000000000
+        Size.Height = 615.000000000000000000
+      end
+    end
+  end
+end

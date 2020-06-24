@@ -1,0 +1,195 @@
+object Main: TMain
+  Left = 0
+  Top = 0
+  Caption = 'Main'
+  ClientHeight = 510
+  ClientWidth = 356
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 356.000000000000000000
+    Size.Height = 510.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      356s
+      510s
+      356s
+      510s
+      356s
+      510s)
+    object TMain: TTabItem
+      CustomIcon = <
+        item
+        end>
+      StyledSettings = [Family, Size, Style]
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TMain'
+      ExplicitSize.cx = 53.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Rectangle2: TRectangle
+        Align = Top
+        Fill.Color = xFFE8E8E8
+        Position.Y = 265.000000000000000000
+        Size.Width = 356.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        object EIP: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Text = '192.168.0.103'
+          Size.Width = 356.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Rectangle3: TRectangle
+        Align = Top
+        Fill.Color = xFFC4B21B
+        Size.Width = 356.000000000000000000
+        Size.Height = 265.000000000000000000
+        Size.PlatformDefault = False
+        object BCodeBarreWeb: TButton
+          Align = Top
+          Size.Width = 356.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Code Barre Manager serveur'
+          OnClick = BCodeBarreWebClick
+        end
+        object BClose: TButton
+          Align = Top
+          Position.Y = 215.000000000000000000
+          Size.Width = 356.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Fermer'
+          OnClick = BCloseClick
+        end
+        object BRecette: TButton
+          Align = Top
+          Position.Y = 86.000000000000000000
+          Size.Width = 356.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Recette'
+          OnClick = BRecetteClick
+        end
+        object BInvent: TButton
+          Align = Top
+          Position.Y = 129.000000000000000000
+          Size.Width = 356.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Inventaire'
+          OnClick = BInventClick
+        end
+        object BCodeBarreLoc: TButton
+          Align = Top
+          Position.Y = 43.000000000000000000
+          Size.Width = 356.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'Code Barre Manager local'
+          OnClick = BCodeBarreLocClick
+        end
+        object BpreAchat: TButton
+          Align = Top
+          Position.Y = 172.000000000000000000
+          Size.Width = 356.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = 'Pres Achat '
+          OnClick = BpreAchatClick
+        end
+      end
+      object Label1: TLabel
+        Align = Top
+        Position.Y = 297.000000000000000000
+        Size.Width = 356.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Version 1.2'
+        TabOrder = 2
+      end
+    end
+    object TAchat: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Achat'
+      ExplicitSize.cx = 51.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object LayoutAchat: TFramedVertScrollBox
+        Align = Client
+        Size.Width = 356.000000000000000000
+        Size.Height = 510.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 356.000000000000000000
+        Viewport.Height = 510.000000000000000000
+      end
+    end
+    object TMAJAchat: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TMAJAchat'
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object LayoutMAJAchat: TLayout
+        Align = Client
+        Size.Width = 356.000000000000000000
+        Size.Height = 510.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+  end
+  object RESTClient1: TRESTClient
+    Params = <>
+    HandleRedirects = True
+    Left = 120
+    Top = 240
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 184
+    Top = 328
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 280
+    Top = 328
+  end
+end

@@ -1,0 +1,125 @@
+object MRInvent: TMRInvent
+  Size.Width = 332.000000000000000000
+  Size.Height = 504.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 332.000000000000000000
+    Size.Height = 504.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object EidBarCode: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 3
+      Size.Width = 332.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Code'
+      object Label1: TLabel
+        Align = MostRight
+        Position.X = 212.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Code'
+        TabOrder = 0
+      end
+    end
+    object EdesArticle: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 2
+      Position.Y = 44.000000000000000000
+      Size.Width = 332.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'D'#233'signation'
+      object Label2: TLabel
+        Align = MostRight
+        Position.X = 212.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'D'#233'signation'
+        TabOrder = 0
+      end
+    end
+    object Rectangle1: TRectangle
+      Align = Top
+      Position.Y = 110.000000000000000000
+      Size.Width = 332.000000000000000000
+      Size.Height = 51.000000000000000000
+      Size.PlatformDefault = False
+      object Button1: TButton
+        Align = Top
+        Size.Width = 332.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Valider'
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Align = Top
+        Position.Y = 29.000000000000000000
+        Size.Width = 332.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'priortoolbutton'
+        TabOrder = 1
+        Text = 'Button2'
+        OnClick = Button2Click
+      end
+    end
+    object ELastPrixAchat: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 1
+      Position.Y = 66.000000000000000000
+      Size.Width = 332.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'D'#233'rnier prix achat'
+      object Label3: TLabel
+        Align = MostRight
+        Position.X = 212.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Prix'
+        TabOrder = 0
+      end
+    end
+    object EQteInvent: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      KeyboardType = NumberPad
+      Position.Y = 88.000000000000000000
+      Size.Width = 332.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Qt'#233' inventaire'
+      object Label4: TLabel
+        Align = MostRight
+        Position.X = 212.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Quantit'#233
+        TabOrder = 0
+      end
+    end
+    object BDisplayArticle: TButton
+      Align = Top
+      Position.Y = 22.000000000000000000
+      Size.Width = 332.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'BDisplayArticle'
+      OnClick = BDisplayArticleClick
+    end
+  end
+end

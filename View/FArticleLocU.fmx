@@ -1,0 +1,477 @@
+object FArticleLoc: TFArticleLoc
+  Align = Client
+  Size.Width = 413.000000000000000000
+  Size.Height = 550.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox1: TVertScrollBox
+    Align = Client
+    Size.Width = 413.000000000000000000
+    Size.Height = 550.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 413.000000000000000000
+    Viewport.Height = 550.000000000000000000
+    object RecButtons: TRectangle
+      Align = Bottom
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 439.000000000000000000
+      Size.Width = 411.000000000000000000
+      Size.Height = 110.000000000000000000
+      Size.PlatformDefault = False
+      object BAjouter: TButton
+        Align = MostTop
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 4.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 403.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Sauvegarder'
+        OnClick = BAjouterClick
+      end
+      object BFermer: TButton
+        Align = MostTop
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 4.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 403.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Fermer'
+        OnClick = BFermerClick
+      end
+      object BSupprimer: TButton
+        Align = MostTop
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 4.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 403.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Supprimer'
+        OnClick = BSupprimerClick
+      end
+    end
+    object Rectangle2: TRectangle
+      Align = Bottom
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF3DBA8E
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = claWhite
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Position.Y = 195.000000000000000000
+      Size.Width = 413.000000000000000000
+      Size.Height = 243.000000000000000000
+      Size.PlatformDefault = False
+      object LayIdArticle: TLayout
+        Align = Top
+        Size.Width = 413.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object EidArticle: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 3
+          KeyboardType = Alphabet
+          TextSettings.Font.Family = '(Default)'
+          Enabled = False
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'idArticle'
+          StyledSettings = [Style, FontColor]
+        end
+        object Label1: TLabel
+          Align = Left
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 49.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = '(Default)'
+          TextSettings.Font.Size = 11.000000000000000000
+          Text = 'idArticle'
+          TabOrder = 1
+        end
+      end
+      object LayPrixAchat: TLayout
+        Align = Top
+        Position.Y = 120.000000000000000000
+        Size.Width = 413.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object ELastPrixAchat: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 3
+          KeyboardType = NumberPad
+          TextSettings.Font.Family = '(Default)'
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Prix achat'
+          StyledSettings = [Style, FontColor]
+        end
+        object Label2: TLabel
+          Align = Left
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 57.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = '(Default)'
+          TextSettings.Font.Size = 11.000000000000000000
+          Text = 'Prix achat'
+          TabOrder = 1
+        end
+      end
+      object LayPrixVente: TLayout
+        Align = Top
+        Position.Y = 80.000000000000000000
+        Size.Width = 413.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object EPrixVente: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 3
+          KeyboardType = NumberPad
+          TextSettings.Font.Family = '(Default)'
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Prix vente'
+          StyledSettings = [Style, FontColor]
+        end
+        object Label3: TLabel
+          Align = Left
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 57.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = '(Default)'
+          TextSettings.Font.Size = 11.000000000000000000
+          Text = 'Prix vente'
+          TabOrder = 1
+        end
+      end
+      object LayDesArticle: TLayout
+        Align = Top
+        Position.Y = 40.000000000000000000
+        Size.Width = 413.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object EDesArticle: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 3
+          TextSettings.Font.Family = '(Default)'
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'D'#233'signation'
+          StyledSettings = [Style, FontColor]
+        end
+        object Label4: TLabel
+          Align = Left
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = '(Default)'
+          TextSettings.Font.Size = 11.000000000000000000
+          Text = 'D'#233'signation'
+          TabOrder = 1
+        end
+      end
+      object LayLastQteAchat: TLayout
+        Align = Top
+        Position.Y = 160.000000000000000000
+        Size.Width = 413.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object ELastQteAchat: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 3
+          KeyboardType = NumberPad
+          TextSettings.Font.Family = '(Default)'
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Qt'#233' achat'
+          StyledSettings = [Style, FontColor]
+        end
+        object Label5: TLabel
+          Align = Left
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 57.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = '(Default)'
+          TextSettings.Font.Size = 11.000000000000000000
+          Text = 'Qt'#233' achat'
+          TabOrder = 1
+        end
+      end
+      object LayQteStock: TLayout
+        Align = Top
+        Position.Y = 200.000000000000000000
+        Size.Width = 413.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object EQteStock: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 3
+          TextSettings.Font.Family = '(Default)'
+          Enabled = False
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Qt'#233' Stock'
+          StyledSettings = [Style, FontColor]
+        end
+        object Label6: TLabel
+          Align = Left
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 57.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = '(Default)'
+          TextSettings.Font.Size = 11.000000000000000000
+          Text = 'Qt'#233' Stock'
+          TabOrder = 1
+        end
+      end
+      object LayUArt: TLayout
+        Align = Top
+        Position.Y = 200.000000000000000000
+        Size.Width = 343.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+        TabOrder = 6
+        object EUArt: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 3
+          KeyboardType = Alphabet
+          TextSettings.Font.Family = '(Default)'
+          Size.Width = 286.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Unit'#233
+          StyledSettings = [Style, FontColor]
+        end
+        object Label7: TLabel
+          Align = MostLeft
+          StyledSettings = [Style, FontColor]
+          Size.Width = 57.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = '(Default)'
+          TextSettings.Font.Size = 11.000000000000000000
+          Text = 'Unit'#233
+          TabOrder = 1
+        end
+      end
+    end
+    object RRecherche: TRectangle
+      Align = Top
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Size.Width = 413.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      object EdesArticleRech: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Size.Width = 257.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Text recherche article'
+      end
+      object EidArticleRech: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Left
+        TabOrder = 1
+        TextSettings.Font.Size = 11.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Code'
+        StyledSettings = [Family, Style, FontColor]
+      end
+      object BRecherche: TButton
+        Align = Right
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 316.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 95.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Rechercher'
+        TextSettings.Font.Size = 11.000000000000000000
+        OnClick = BRechercheClick
+      end
+    end
+    object Rectangle1: TRectangle
+      Align = Client
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Size.Width = 413.000000000000000000
+      Size.Height = 155.000000000000000000
+      Size.PlatformDefault = False
+      object StringGrid1: TStringGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Padding.Left = 2.000000000000000000
+        Padding.Top = 2.000000000000000000
+        Padding.Right = 2.000000000000000000
+        Padding.Bottom = 2.000000000000000000
+        Size.Width = 409.000000000000000000
+        Size.Height = 151.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        TabOrder = 0
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, HeaderClick, AutoDisplacement]
+        OnCellClick = StringGrid1CellClick
+        Viewport.Width = 389.000000000000000000
+        Viewport.Height = 110.000000000000000000
+        object StringColumn1: TStringColumn
+          Header = 'IdArticle'
+          Size.Width = 37.000000000000000000
+        end
+        object StringColumn2: TStringColumn
+          Header = 'desArticle'
+          Size.Width = 187.000000000000000000
+        end
+        object StringColumn3: TStringColumn
+          Header = 'P.Vente'
+          Size.Width = 47.000000000000000000
+        end
+        object StringColumn4: TStringColumn
+          Header = 'P.Achat'
+          Size.Width = 55.000000000000000000
+        end
+        object StringColumn5: TStringColumn
+          Header = 'QteAchat'
+          Size.Width = 55.000000000000000000
+        end
+        object StringColumn6: TStringColumn
+          Header = 'Stock'
+          Size.Width = 33.000000000000000000
+        end
+        object StringColumn7: TStringColumn
+          Size.Width = 27.000000000000000000
+        end
+        object StringColumn8: TStringColumn
+          Size.Width = 28.000000000000000000
+        end
+      end
+    end
+  end
+end
