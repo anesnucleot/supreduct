@@ -1,7 +1,7 @@
 unit ArticleLocDAOU;
 
 interface
-//changement verifie git modif allure
+
 
 uses
   ArticleLocDTOU, APIUtilsU, FireDAC.UI.Intf, FireDAC.FMXUI.Wait,
